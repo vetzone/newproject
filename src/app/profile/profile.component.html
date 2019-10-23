@@ -1,0 +1,92 @@
+
+
+
+
+
+
+    
+    <div>
+    </div>
+    <div class="card  text-center col-lg-7 col-md-4 col-sm-3 border border-white">
+            <h5 class="card-header  bg-primary  text-white font"> Manage your Profile  </h5>
+            <div class="card-body border border-info">
+
+                    <form #myform='ngForm' (ngSubmit)='onSubmit(myform)' >
+                            <div class="form-group row">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label text-secondary">Your name<span>*</span></label>
+                              <div class="col-sm-10">
+                                <input type="name" class="form-control" id="inputname3" placeholder="Name" #username ='ngModel' [(ngModel)] ='variable' required>
+                              </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                                    <label for="inputEmail" class="col-sm-2 col-form-label text-secondary ">Email address<span>*</span></label>
+                                    <div class="col-sm-10 ">
+                                      <input type="email" class="form-control " id="inputEmail" placeholder="Email" required  #email ='ngModel' [(ngModel)] ='variable2'>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group row">
+                                        <label for="inputEmail2" class=" col-sm-2  col-form-label text-secondary" >tel-number<span>*</span></label>
+                                        <div class="col-sm-10">
+                                          <input type="tel" class="form-control " id="inputEmail2" placeholder="phone number" required  #number ='ngModel' [(ngModel)] ='variable3' >
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label text-secondary">Birth of date</label>
+                                            <div class="col-sm-10">
+                                              <input type="date" class="form-control" id="inputEmail3" placeholder="birth date"  #date ='ngModel' [(ngModel)] ='variable4'>
+                                            </div>
+                                          </div>
+ <div class="form-group row" >
+
+        <label  for="final" class=" col-sm-2 col-form-label text-secondary">Area</label>
+<select class="custom-select fa fa-calendar-check-o" aria-hidden="true"  id="final" >
+ >
+<i class="fas fa-font-awesome-logo-full"></i>
+    
+        <optgroup label="cairo" >
+        <option selected text-secondary>All Area</option>
+        <option value="1">giza</option>
+        <option value="2">misr elgidida</option>
+        <!-- <hr class="text-secondary"> -->
+    </optgroup>
+    <optgroup label="damietta">
+        <option value="3">fariskour</option>
+        <option value="3">el zarka</option>
+        <option value="3">new damietta</option>
+    </optgroup>
+      </select>
+
+</div>
+
+
+<i class="far fa-address-book"></i>
+
+
+
+                                        
+                            <div class="form-group row">
+                              <div class="col-sm-10 offset-sm-2">
+                                  
+                                <button type="submit" class="btn bg-danger text-white"> save</button>
+                        
+                
+                                <button type="" class="btn bg-primary text-white">cancel </button>
+                            
+                              </div>
+                            </div>
+                          </form>
+           
+    </div>
+
+   
+
+
+
+
+
+
+
+  
