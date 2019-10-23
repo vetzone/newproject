@@ -1,45 +1,43 @@
-h5 , label , input, button , select{
+h5,
+label,
+input,
+button,
+select {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
-select{
-    margin-left:1em;
+
+select {
+    margin-left: 1em;
     margin-top: 0em;
     width: 19em;
 }
-img{
-    width:2em;
+
+img {
+    width: 2em;
 }
-span{
+
+span {
     color: red;
 }
- label
- {
-     text-align: left;
-     margin-right: 0em;
-     margin-left: 0em;
-    
- }
- 
 
- button
- {
-     margin: .5em;
-     width: 10em;
-     font-weight: bold;
-    
- }
-.card-header 
-{
+label {
+    text-align: left;
+    margin-right: 0em;
+    margin-left: 0em;
+}
+
+button {
+    margin: .5em;
+    width: 10em;
+    font-weight: bold;
+}
+
+.card-header {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.card-body
-{
+
+.card-body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    
 }
-
-
-
