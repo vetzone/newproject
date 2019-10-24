@@ -12,10 +12,12 @@ import { CallusComponent } from './core/info/callus/callus.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { CloginComponent } from './clogin/clogin.component';
+import { SignUpComponent } from './sign-up/SignUpComponent';
 
 
 @NgModule({
   declarations: [
+
     AppComponent,
     InfoComponent,
     AboutusComponent,
@@ -24,6 +26,7 @@ import { CloginComponent } from './clogin/clogin.component';
     CallusComponent,
     ProfileComponent,
     CloginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
