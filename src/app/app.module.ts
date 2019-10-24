@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { CallusComponent } from './core/info/callus/callus.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { CloginComponent } from './clogin/clogin.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ProfileComponent } from './profile/profile.component';
     OurteamComponent,
     CallusComponent,
     ProfileComponent,
+    CloginComponent,
   ],
   imports: [
     BrowserModule,
