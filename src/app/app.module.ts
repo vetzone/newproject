@@ -11,10 +11,12 @@ import { RouterModule } from '@angular/router';
 import { CallusComponent } from './core/info/callus/callus.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { SignUpComponent } from "./sign-up/SignUpComponent";
 
 
 @NgModule({
   declarations: [
+  
     AppComponent,
     InfoComponent,
     AboutusComponent,
@@ -22,6 +24,7 @@ import { ProfileComponent } from './profile/profile.component';
     OurteamComponent,
     CallusComponent,
     ProfileComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
