@@ -1,0 +1,10 @@
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.section {
+    min-height: 1000px;
+    overflow: 'hidden';
+    position: 'relative';
+    padding-top: 80px;
+}

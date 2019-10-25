@@ -1,3 +1,4 @@
+import { NavbarComponent } from './core/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,6 +14,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { CloginComponent } from './clogin/clogin.component';
 import { SignUpComponent } from './sign-up/SignUpComponent';
+import { FooterComponent } from './core/footer/footer.component';
+import { HeadComponent } from './core/head/head.component';
+import { HomeComponent } from './core/home/home.component';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { SignUpComponent } from './sign-up/SignUpComponent';
     CallusComponent,
     ProfileComponent,
     CloginComponent,
-    SignUpComponent
+    SignUpComponent,
+    NavbarComponent,
+    FooterComponent,
+    HeadComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
