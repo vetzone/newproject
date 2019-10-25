@@ -10,7 +10,7 @@ import { ContactusComponent } from './core/info/contactus/contactus.component';
 import { OurteamComponent } from './core/info/ourteam/ourteam.component';
 import { RouterModule } from '@angular/router';
 import { CallusComponent } from './core/info/callus/callus.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { CloginComponent } from './clogin/clogin.component';
 import { SignUpComponent } from './sign-up/SignUpComponent';
@@ -34,7 +34,7 @@ import { HomeComponent } from './core/home/home.component';
     NavbarComponent,
     FooterComponent,
     HeadComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
