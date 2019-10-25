@@ -1,9 +1,14 @@
+.text-danger{
+  text-align: center;
+  margin: 50px 0 auto
+}
+
 .card{
   width: 600px;
   height: auto;
   box-sizing: border-box;
   position: block;
-  margin: 200px 400px;
+  margin: 50px 400px auto 400px;
   color: fuchsia;
   background-color: blueviolet
 }

@@ -1,7 +1,4 @@
-<p class="alert alert-danger" *ngIf="isvalid">error</p>
-<p class="alert alert-danger" *ngIf="password.invalid && password.touched"> password is required</p>
-<p class="alert alert-danger" *ngIf="username.invalid && username.touched && username.errors['required'] "> username is required</p>
-<p class="alert alert-danger" *ngIf="username.invalid && username.touched && username.errors['minlength']"> minlength is {{username.errors['minlength']['requiredLength']}}</p>
+<p class="text-danger" *ngIf="isvalid || password.invalid || password.touched || username.invalid || username.touched || username.errors['required']">Invalid User Name or Password</p>
 <div class="card">
   <div class="container">
     <h4 class="card-title">Log In</h4>
