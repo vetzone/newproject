@@ -42,5 +42,52 @@
         border:1px solid red;
     }
    *:focus{ outline: none } 
+   /* for test */
+   
+
+#input-container {
+    position: relative;
+    width: 60%;
+  }
+  
+  #input-container > i {
+    position: absolute;
+    
+    left: 0px;
+    top:12px;
+    padding: 9px 8px;
+    
+
+    color: blue;
+  }
+  #input-container > input {
+    padding-left: 40px;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+   
+    border-radius: 4px;
+    outline: none;
+    padding-left: 40px;
+  }
+  .ico{
+      width: 60%;
+    
+      
+  }
+.ico input{
+    padding-left: 40px;
+    outline: none;
+
+   
+}
+  .ico::before{
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f007";
+    position: absolute;
+    color: blue;
+    padding-top:5px;
+    left:10px;
+  }
 
     
