@@ -18,7 +18,7 @@ import { SignUpComponent } from './sign-up/SignUpComponent';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeadComponent } from './core/head/head.component';
 import { HomeComponent } from './core/home/home.component';
-let config = new AuthServiceConfig([
+const config = new AuthServiceConfig([
   {
     id: FacebookLoginProvider.PROVIDER_ID,
     provider: new FacebookLoginProvider("547062139391402")
