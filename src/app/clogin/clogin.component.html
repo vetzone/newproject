@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p class="text-danger" *ngIf="isvalid || password.invalid || password.touched || username.invalid || username.touched || username.errors['required']">Invalid User Name or Password</p>
 <div class="card">
     <div class="container">
@@ -43,3 +44,80 @@
         </form>
     </div>
 </div>
+=======
+<p class="text-danger" *ngIf="isvalid || password.invalid || password.touched
+|| username.invalid || username.touched
+|| username.errors['required']">Invalid User Name or Password</p>
+<div class="card col-*-4">
+  <div class="container">
+    <h4 class="card-title">Log In</h4>
+    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+      <div class="form-group row">
+        <label for="username"
+          class="col-sm-1-12 col-form-label">
+          User Name </label>
+        <div class="col-sm-1-12">
+          <input type="text" class="form-control" name="username"
+                 id="username" placeholder="User Name"
+                 #username="ngModel" [(ngModel)]="userinfo.username"
+                 required minlength="5">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="password"
+        class="col-sm-1-12 col-form-label"
+        style='width: 100px; color: gold;'>
+        Password
+      </label>
+        <div class="col-sm-1-12">
+          <input type="password" class="form-control" name="password"
+                 id="password" placeholder="Password"
+                 #password="ngModel" [(ngModel)]="userinfo.password" required>
+          </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-1-12">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox"
+                       class="custom-control-input"
+                       id="customCheck1">
+                <label class="custom-control-label"
+                       for="customCheck1" style='color: fuchsia;'>
+                       Remember Me
+                </label>
+            </div>
+        </div>
+      </div>
+      <div class="form-group row">
+          <div class="col-sm-1-12">
+            <p class='signpara' style='color: gold;'>
+              If you don't have an account , click
+              <a class='signlink' [routerLink]="['/csignup']">
+                Sign Up
+              </a>
+            </p>
+          </div>
+      </div>
+      <div class="form-group row">
+          <div class="text-center" style='position: relative;'>
+              <a href='#'>
+                <i class="fa fa-facebook"
+                   style='color: gold;
+                        position: absolute;
+                        left: 150px;
+                        bottom: 8px'>
+                </i>
+              </a>
+          </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+          <button type="submit" class="btn" [disabled]="myform.invalid">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+>>>>>>> d963a38fb5910c4a4d20e66ea31057c6cde8cdbc
