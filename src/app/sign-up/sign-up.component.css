@@ -1,34 +1,51 @@
-
-.card{
-    border-radius: 10px;
-}
-.btn-facebook, .btn-facebook:active,
- .btn-facebook:focus, .btn-facebook:hover{
-    background-color: #2B4B90;
-    color: #fff;
-    border-radius: 5px;
-    outline: 0 !important;
-    font-size: 16px;
-}
-.hr-text {
-    line-height: 1em;
-    position: relative;
-    outline: 0;
-    border: 0;
-    color: black;
-    text-align: center;
-    height: 1.5em;
-   }
-    .hr-text:before {
-      content: '';
-      background: linear-gradient(to right, transparent, #818078, transparent);
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      height: 1px;
+    .card {
+        border-radius: 10px;
     }
+
+    .btn-facebook,
+    .btn-facebook:active,
+    .btn-facebook:focus,
+    .btn-facebook:hover {
+        background-color: #2B4B90;
+        color: #fff;
+        border-radius: 5px;
+        outline: 0 !important;
+        font-size: 16px;
+        width: 300px;
+        position: relative;
+    }
+
+    button i {
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+        top: 10px;
+        padding-right: 10px;
+        border-right: 2px solid rgba(255, 255, 255, .2);
+    }
+
+    .hr-text {
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color: black;
+        text-align: center;
+        height: 1.5em;
+    }
+
+    .hr-text:before {
+        content: '';
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+
     .hr-text:after {
+<<<<<<< HEAD
       content: attr(data-content);
       position: relative;
       display: inline-block;
@@ -89,5 +106,22 @@
     padding-top:5px;
     left:10px;
   }
+=======
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+        padding: 0 .5em;
+        line-height: 1.5em;
+        color: #818078;
+        background-color: #fcfcfa;
+    }
+>>>>>>> 99122b20edf02b33eeac6db7daf5ffa8c5e5f1a5
 
-    
+    .form-control.ng-touched.ng-invalid {
+        border: 1px solid red;
+    }
+
+    *:focus {
+        outline: none
+    }
