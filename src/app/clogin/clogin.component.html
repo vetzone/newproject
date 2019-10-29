@@ -1,82 +1,45 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="container">
-    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
-        <div class="form-group row">
-            <label for="username" class="col-sm-1-12 col-form-label">User Name : </label>
-            <div class="col-sm-1-12">
-                <input type="text" class="form-control" name="username" id="username" placeholder="User Name" #username="ngModel" [(ngModel)]="userinfo.username" required minlength="5"> pristin : {{username.pristine}} valid : {{username.valid}} touched
-                :{{username.touched}}
-            </div>
-            <div class="alert alert-danger" *ngIf="username.invalid && username.touched && username.errors['required'] "> username is required</div>
-            <div class="alert alert-danger" *ngIf="username.invalid && username.touched && username.errors['minlength']"> minlength is {{username.errors['minlength']['requiredLength']}}</div>
-        </div>
-        <div class="form-group row">
-            <label for="password" class="col-sm-1-12 col-form-label">Password : </label>
-            <div class="col-sm-1-12">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password" #password="ngModel" [(ngModel)]="userinfo.password" required>
-            </div>
-            <div class="alert alert-danger" *ngIf="password.invalid && password.touched"> password is required</div>
-        </div>
-        <div class="form-group row">
-            <div class="offset-sm-2 col-sm-10">
-                <button type="submit" class="btn btn-primary" [disabled]="myform.invalid">Sign In</button>
-            </div>
-
-            <div class="alert alert-danger" *ngIf="isvalid">error</div>
-        </div>
-    </form>
-=======
-=======
->>>>>>> d778f08cf570868639817d2f03678024d5f5ecb9
 <p class="text-danger" *ngIf="isvalid || password.invalid || password.touched || username.invalid || username.touched || username.errors['required']">Invalid User Name or Password</p>
 <div class="card">
-  <div class="container">
-    <h4 class="card-title">Log In</h4>
-    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
-      <div class="form-group row">
-        <label for="username" class="col-sm-1-12 col-form-label">User Name </label>
-        <div class="col-sm-1-12">
-          <input type="text" class="form-control" name="username" id="username" placeholder="User Name"
-           #username="ngModel" [(ngModel)]="userinfo.username" required minlength="5">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="password" class="col-sm-1-12 col-form-label">Password </label>
-        <div class="col-sm-1-12">
-          <input type="password" class="form-control" name="password" id="password" placeholder="Password"
-           #password="ngModel" [(ngModel)]="userinfo.password" required>
-          </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-sm-1-12">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember Me</label>
+    <div class="container">
+        <h4 class="card-title">Log In</h4>
+        <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+            <div class="form-group row">
+                <label for="username" class="col-sm-1-12 col-form-label">User Name </label>
+                <div class="col-sm-1-12">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="User Name" #username="ngModel" [(ngModel)]="userinfo.username" required minlength="5">
+                </div>
             </div>
-        </div>
-      </div>
-      <div class="form-group row">
-          <div class="col-sm-1-12">
-            <p class='signpara'>If you don't have an account , click <a class='signlink'[routerLink]="['/csignup']">Sign Up</a></p>
-          </div>
-      </div>
-      <div class="form-group row">
-          <div class="text-center">
-              <button class="btn btn-lg btn-facebook text-center mb-3 ">
+            <div class="form-group row">
+                <label for="password" class="col-sm-1-12 col-form-label">Password </label>
+                <div class="col-sm-1-12">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" #password="ngModel" [(ngModel)]="userinfo.password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1-12">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1-12">
+                    <p class='signpara'>If you don't have an account , click <a class='signlink' [routerLink]="['/csignup']">Sign Up</a></p>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="text-center">
+                    <button class="btn btn-lg btn-facebook text-center mb-3 ">
                   <i class="fa fa-facebook"></i><span>  </span>  Connect with Facebook
               </button>
-          </div>
-      </div>
-      <div class="form-group row">
-        <div class="offset-sm-2 col-sm-10">
-          <button type="submit" class="btn" [disabled]="myform.invalid">Sign In</button>
-        </div>
-      </div>
-    </form>
-  </div>
-<<<<<<< HEAD
->>>>>>> 99122b20edf02b33eeac6db7daf5ffa8c5e5f1a5
-=======
->>>>>>> d778f08cf570868639817d2f03678024d5f5ecb9
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn" [disabled]="myform.invalid">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
