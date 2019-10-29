@@ -1,1 +1,8 @@
-<p>callus works!</p>
+<img src="{{ user.photoUrl }}">
+<div>
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+</div>
+<button type="button" name="" id="" class="btn btn-primary btn-lg btn-block " *ngIf="!loggedIn" (click)="signInWithFB() ">Login with FB</button>
+<button type="button" name="" id="" class="btn btn-primary btn-lg btn-block " *ngIf="loggedIn" (click)=" signOut() ">Logout</button>
+<button type="button" name="" id="" class="btn btn-primary btn-lg btn-block " (click)="signInWithGoogle()">Login with Google</button>
