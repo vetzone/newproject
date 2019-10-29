@@ -8,8 +8,9 @@
             <form action="" #form="ngForm">
                 <div class="text-center ">
                     <button class="btn btn-lg btn-facebook text-center mb-3 ">
-        <i class="fa fa-facebook"></i><span>  </span>  Connect with Facebook
-      </button>
+            <i class="fab fa-facebook-f"></i>
+            Connect With Facebook
+          </button>
                 </div>
                 <div class="text-center">
                     <hr class="hr-text" data-content="OR">
@@ -17,9 +18,9 @@
                 </div>
                 <div class="form-group row">
                     <label for="inputname" class="col-sm-4 col-form-label">
-        Your Name
-        <sup class="text-danger">*</sup>
-      </label>
+            Your Name
+            <sup class="text-danger">*</sup>
+          </label>
 
                     <div class="col-sm-8">
                         <input type="text" ngModel name="fullname" #fullname="ngModel" class="form-control" id="inputname" placeholder="First name and Last name" required>
@@ -34,9 +35,9 @@
                 <!-- full name -->
                 <div class="form-group row">
                     <label for="inputmobile" class="col-sm-4 col-form-label">
-        Mobile Number
-        <sup class="text-danger">*</sup>
-      </label>
+            Mobile Number
+            <sup class="text-danger">*</sup>
+          </label>
                     <div class="col-sm-8">
                         <input type="text" ngModel name="number" #number="ngModel" class="form-control" id="inputmobile" placeholder="Mobile Number" required minlength="11" maxlength="11">
                         <div class="text-danger" *ngIf="form.submitted || number.touched && number.invalid">
@@ -50,23 +51,23 @@
                 <!-- mobile number -->
                 <div class="form-group row">
                     <label for="inputemail" class="col-sm-4 col-form-label">
-          Email Address
-          <sup class="text-danger">*</sup>
-        </label>
+            Email Address
+            <sup class="text-danger">*</sup>
+          </label>
                     <div class="col-sm-8">
                         <input type="email" ngModel name="email" #email="ngModel" class="form-control" id="inputemail" placeholder="example@domain.com" required [pattern]="emailRegex">
                         <div class="text-danger" *ngIf='form.submitted || email.touched && email.invalid'>
                             <div *ngIf="email.errors['required']"> Email Address is required</div>
-                            <div *ngIf="email.errors['pattern']">Invalid Email Address</div>
+                            <div *ngIf="email.errors['pattern']">Invalid Email Address </div>
                         </div>
                     </div>
                 </div>
                 <!-- email -->
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-4 col-form-label">
-          Password
-          <sup class="text-danger">*</sup>
-        </label>
+            Password
+            <sup class="text-danger">*</sup>
+          </label>
                     <div class="col-sm-8">
                         <input type="password" ngModel name="password" #password="ngModel" class="form-control" id="inputPassword3" placeholder="Password" required>
                         <div class="text-danger" *ngIf='form.submitted || password.touched && password.invalid'>
@@ -79,9 +80,20 @@
                     <div class=col-sm-4></div>
                     <div class="col-sm-8">
                         <button type="submit" class="btn btn-danger" value="join" (click)="join()">
-            Join Now
-        </button>
+              Join Now
+            </button>
                     </div>
+                    <!-- for test -->
+                    <div id="input-container">
+
+                        <input type="text" placeholder="enter your name" class="" name="" id="">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-group ico">
+                        <input type="text" placeholder="enter your name" class="form-control">
+
+                    </div>
+                    <!--  -->
                 </div>
                 <!-- submit-->
                 <hr class="hr-text">
@@ -99,6 +111,4 @@
     </div>
 
 
-
-</div>
-<!-- sign up-->
+    <!-- sign up-->
