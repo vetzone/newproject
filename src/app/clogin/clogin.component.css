@@ -1,0 +1,72 @@
+.text-danger{
+  text-align: center;
+  margin: 50px 0 auto
+}
+
+.card{
+  width: 600px;
+  height: auto;
+  box-sizing: border-box;
+  position: block;
+  margin: 50px 400px auto 400px;
+  color: fuchsia;
+  background-color: blueviolet
+}
+
+.card > .container{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  margin: 0 auto;
+  width: 500px;
+  height: auto
+}
+
+.card .container .card-title{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px
+}
+
+.card > .container > form{
+  width: 350px;
+  padding: 50px 75px 30px 75px
+}
+
+.card .container form input{
+  margin: 0 20px;
+  height: 30px;
+  width: 140%
+}
+
+.custom-control-label{
+  color: gold
+}
+
+.col-sm-1-12{
+  width: 300px
+}
+
+button{
+  text-align: center;
+  width: 125px;
+  border-radius: 30px 30px;
+  margin-left: 30%;
+  margin-bottom: 0 auto;
+  background-color: gold;
+  color: blueviolet
+}
+
+.signpara{
+  color: fuchsia;
+  width: 400px
+}
+
+.signlink{
+  color: gold;
+  text-decoration: none
+}
+
+.alert alert-danger{
+  text-align: center;
+  margin: 0 auto
+}
