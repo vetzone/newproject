@@ -1,127 +1,100 @@
-    .card {
-        border-radius: 10px;
-    }
+   .card {
+     border: 1px solid #0bb5eb;
+     border-radius: 15px;
 
-    .btn-facebook,
-    .btn-facebook:active,
-    .btn-facebook:focus,
-    .btn-facebook:hover {
-        background-color: #2B4B90;
-        color: #fff;
-        border-radius: 5px;
-        outline: 0 !important;
-        font-size: 16px;
-        width: 300px;
-        position: relative;
-    }
+   }
 
-    button i {
-        position: absolute;
-        left: 10px;
-        font-size: 20px;
-        top: 10px;
-        padding-right: 10px;
-        border-right: 2px solid rgba(255, 255, 255, .2);
-    }
+   h4 {
+     background: linear-gradient(#7c7ee2, #0bb5eb);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
 
-    .hr-text {
-        line-height: 1em;
-        position: relative;
-        outline: 0;
-        border: 0;
-        color: black;
-        text-align: center;
-        height: 1.5em;
-    }
+   }
 
-    .hr-text:before {
-        content: '';
-        background: linear-gradient(to right, transparent, #818078, transparent);
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        height: 1px;
-    }
+   #input-container {
+     position: relative;
 
-    .hr-text:after {
-<<<<<<< HEAD
-      content: attr(data-content);
-      position: relative;
-      display: inline-block;
-      color: black;
-      padding: 0 .5em; 
-      line-height: 1.5em;
-      color: #818078;
-      background-color: #fcfcfa;
-    }
-    .form-control.ng-touched.ng-invalid{
-        border:1px solid red;
-    }
-   *:focus{ outline: none } 
-   /* for test */
-   
+   }
 
-#input-container {
-    position: relative;
-    width: 60%;
-  }
-  
-  #input-container > i {
-    position: absolute;
-    
-    left: 0px;
-    top:12px;
-    padding: 9px 8px;
-    
+   #input-container>i {
+     position: absolute;
+     left: 25px;
+     top: 8px;
+     padding: 9px 8px;
+     color: #0bb5eb;
+   }
 
-    color: blue;
-  }
-  #input-container > input {
-    padding-left: 40px;
-    width: 100%;
-    margin: 8px 0;
-    padding: 8px;
-   
-    border-radius: 4px;
-    outline: none;
-    padding-left: 40px;
-  }
-  .ico{
-      width: 60%;
-    
-      
-  }
-.ico input{
-    padding-left: 40px;
-    outline: none;
+   #input-container>input {
+     margin: 6px 0;
+     padding: 8px;
+     border-color: #0bb5eb;
+     border-radius: 20px;
+     outline: none;
+     padding-left: 40px;
 
-   
-}
-  .ico::before{
-    font-family: "Font Awesome\ 5 Free";
-    content: "\f007";
-    position: absolute;
-    color: blue;
-    padding-top:5px;
-    left:10px;
-  }
-=======
-        content: attr(data-content);
-        position: relative;
-        display: inline-block;
-        color: black;
-        padding: 0 .5em;
-        line-height: 1.5em;
-        color: #818078;
-        background-color: #fcfcfa;
-    }
->>>>>>> 99122b20edf02b33eeac6db7daf5ffa8c5e5f1a5
+   }
 
-    .form-control.ng-touched.ng-invalid {
-        border: 1px solid red;
-    }
+   .btn1 {
+     background: linear-gradient(#7c7ee2, #0bb5eb);
+     border-radius: 20px;
 
-    *:focus {
-        outline: none
-    }
+   }
+
+
+
+
+   .hr-text {
+     line-height: 1em;
+     position: relative;
+     outline: 0;
+     border: 0;
+     color: black;
+     text-align: center;
+     height: 1.5em;
+   }
+
+   .hr-text:before {
+     content: '';
+     background: linear-gradient(to right, transparent, #818078, transparent);
+     position: absolute;
+     left: 0;
+     top: 50%;
+     width: 100%;
+     height: 1px;
+   }
+
+   .hr-text:after {
+     content: attr(data-content);
+     position: relative;
+     display: inline-block;
+     color: black;
+     padding: 0 .5em;
+     line-height: 1.5em;
+     color: #818078;
+     background-color: #fcfcfa;
+   }
+
+   .btn-facebook,
+   .btn-facebook:active,
+   .btn-facebook:focus,
+   .btn-facebook:hover {
+     background-color: #2B4B90;
+     color: #fff;
+     border-radius: 20px;
+     outline: 0 !important;
+     position: relative;
+   }
+
+
+   button i {
+     position: absolute;
+     left: 10px;
+     font-size: 20px;
+     top: 10px;
+     padding-right: 10px;
+     border-right: 2px solid rgba(255, 255, 255, .2);
+   }
+
+   .form-control.ng-touched.ng-invalid {
+     border: 1px solid red;
+   }

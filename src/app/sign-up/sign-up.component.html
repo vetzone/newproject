@@ -1,30 +1,18 @@
-<div class=" mt-5 col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1   ">
-  <div class="card">
+<div class=" mt-5 col-lg-4 col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2 card ">
+ 
 
-    <div class="card-header bg-primary text-center text-white mb-3">
-      Sign Up
+    <div class=" text-center my-3">
+     <h4 class=text> Sign Up</h4>
     </div>
-    <div class=card-body>
+   
       <form action="" #form="ngForm">
-        <div class="text-center ">
-          <button class="btn btn-lg btn-facebook text-center mb-3 ">
-            <i class="fab fa-facebook-f"></i>
-            Connect With Facebook
-          </button>
-        </div>
-        <div class="text-center">
-          <hr class="hr-text" data-content="OR">
-
-        </div>
+      
         <div class="form-group row">
-          <label for="inputname" class="col-sm-4 col-form-label">
-            Your Name
-            <sup class="text-danger">*</sup>
-          </label>
-
-          <div class="col-sm-8">
+          <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 " id="input-container">
             <input type="text" ngModel name="fullname" #fullname="ngModel" class="form-control" id="inputname"
-              placeholder="First name and Last name" required>
+              placeholder="Username" required>
+              <i class="fa fa-user"></i>
+
             <div class="text-danger" *ngIf="form.submitted || fullname.touched && fullname.invalid">
               <div *ngIf="fullname.errors['required']">
                 Full Name is required
@@ -33,14 +21,15 @@
           </div>
 
         </div> <!-- full name -->
+
+
         <div class="form-group row">
-          <label for="inputmobile" class="col-sm-4 col-form-label">
-            Mobile Number
-            <sup class="text-danger">*</sup>
-          </label>
-          <div class="col-sm-8">
+        
+          <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 " id="input-container">
             <input type="text" ngModel name="number" #number="ngModel" class="form-control" id="inputmobile"
               placeholder="Mobile Number" required minlength="11" maxlength="11">
+              <i class="fa fa-phone"></i>
+
             <div class="text-danger" *ngIf="form.submitted || number.touched && number.invalid">
               <div *ngIf="number.errors['required']"> Mobile Number is required</div>
               <div *ngIf="number.errors['minlength']"> Invalid Mobile Number</div>
@@ -49,69 +38,76 @@
             </div>
           </div>
         </div> <!-- mobile number -->
+
         <div class="form-group row">
-          <label for="inputemail" class="col-sm-4 col-form-label">
-            Email Address
-            <sup class="text-danger">*</sup>
-          </label>
-          <div class="col-sm-8">
+        
+          <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 " id="input-container">
             <input type="email" ngModel name="email" #email="ngModel" class="form-control" id="inputemail"
-              placeholder="example@domain.com" required [pattern]="emailRegex">
+              placeholder="Email" required [pattern]="emailRegex">
+              <i class="fa fa-envelope"></i>
             <div class="text-danger" *ngIf='form.submitted || email.touched && email.invalid'>
               <div *ngIf="email.errors['required']"> Email Address is required</div>
               <div *ngIf="email.errors['pattern']">Invalid Email Address </div>
             </div>
           </div>
         </div> <!-- email -->
+
         <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-4 col-form-label">
-            Password
-            <sup class="text-danger">*</sup>
-          </label>
-          <div class="col-sm-8">
+         
+          <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 " id="input-container">
             <input type="password" ngModel name="password" #password="ngModel" class="form-control" id="inputPassword3"
               placeholder="Password" required>
+              <i class=" fa fa-lock"></i>
             <div class="text-danger" *ngIf='form.submitted || password.touched && password.invalid'>
               <div *ngIf="password.errors['required']"> Password is required</div>
             </div>
           </div>
         </div> <!-- password -->
+        
         <div class="form-group row">
-          <div class=col-sm-4></div>
-          <div class="col-sm-8">
-            <button type="submit" class="btn btn-danger" value="join" (click)="join()">
-              Join Now
+         
+          <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 " id="input-container">
+            <input type="password" ngModel name="password2" #password2="ngModel" class="form-control" id="inputPassword"
+              placeholder="Confirm password" required>
+              <i class=" fa fa-lock"></i>
+            <div class="text-danger" *ngIf='form.submitted || password2.touched && password2.invalid'>
+              <div *ngIf="password.errors['required']">confirm Password is required</div>
+            </div>
+          </div>
+        </div> <!-- confirm password -->
+        <div class="form-group row">
+         
+          <div class=" col-md-8 col-sm-10 offset-md-2 offset-sm-1 ">
+            <button type="submit" class="btn btn1 btn-block my-3  " value="join" (click)="join()" [disabled]="form.invalid" >
+              Sign Up
             </button>
           </div>
-          <!-- for test -->
-          <div id="input-container">
-
-            <input type="text" placeholder="enter your name" class="" name="" id="">
-            <i class="fa fa-user"></i>
-          </div>
-          <div class="form-group ico">
-            <input type="text" placeholder="enter your name" class="form-control">
-
-          </div>
-          <!--  -->
+          
         </div> <!-- submit-->
-        <hr class="hr-text">
-        <div class="text-center d-flex justify-content-center">
-          <p class="text-muted mr-2">Already Registered in VetZone ?</p>
-          <a [routerLink]="'/Clogin'">login</a>
 
+          <div class="text-center mb-3">
+            <hr class="hr-text" data-content="OR">
+  
+          </div>
+
+        
+        <div class="col-md-8 col-sm-10 offset-md-2 offset-sm-1 mb-4   ">
+          <button class="btn btn-block btn-facebook text-center ">
+            <i class="fa fa-facebook-f mr-1" aria-hidden="true"></i>
+            Sign Up With Facebook
+          </button>
+        </div>
+       
+        <div class="text-center mb-3 ">
+          <p class="text-muted mb-0">Already Registered in VetZone ?</p>    
+          <a [routerLink]="'/Clogin'" class=" text ">LOGIN</a>
         </div>
 
 
 
       </form>
-    </div> <!-- card-body-form -->
-  </div>
+   
 
-            </form>
-        </div>
-        <!-- card-body-form -->
-    </div>
 
 
 
