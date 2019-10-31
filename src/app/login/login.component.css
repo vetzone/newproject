@@ -1,0 +1,48 @@
+.card{
+  /* border: linear-gradient(to bottom , rgb(104, 22, 255) , rgb(19, 180, 255)) 1px solid; */
+  border-radius: 20px;
+  margin: 100px auto;
+  padding: 30px;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 400px;
+  height: 525px auto
+}
+
+.card .card-body .card-title{
+  /* background-color: linear-gradient(to top , rgb(104, 22, 255) , rgb(19, 180, 255)); */
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-align: center
+}
+
+.card .card-body .form-group .form-control{
+  padding-left: 20px;
+  border-radius: 35px
+}
+
+.card .card-body .form-row{
+  font-size: 14px
+}
+
+.card .card-body .form-row a{
+  font-style: italic
+}
+
+.card .card-body .form-group #signin ,
+ .card .card-body .form-group #facebook{
+  position: relative;
+  border-style: none;
+  color: white;
+  text-align: center;
+  border-radius: 35px
+}
+
+.card .card-body .form-group #signin{
+  background-color: linear-gradient(to left , rgb(104, 22, 255) , rgb(19, 180, 255))
+}
+
+.card .card-body .form-group #facebook{
+  background-color: rgba(56, 56, 146, 0.74)
+}
