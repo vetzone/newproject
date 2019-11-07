@@ -1,0 +1,36 @@
+
+header{
+    width:100% ;
+    /* height: 500px;     */
+    background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(9,9,121,.3), rgba(0,212,255,.3)),
+    url(../../../assets/images/e9bb8af36dfcbb7eb9d1249fc30c28a2.jpg);
+    border-radius:0 0 50% 50% / 50%;
+    background-position: bottom;
+    /* float: inline-end; */
+}
+.bgge{
+    border:1px solid linear-gradient(to right, rgba(9,9,121,.3), rgba(0,212,255,.3));
+}
+.bg-bgge{
+   background-image:  linear-gradient(to right, rgb(9,9,121), rgb(0,212,255));
+   border: 1px solid #0bb5e9;
+}
+.text-bgge{
+ color: linear-gradient( rgb(9,9,121), rgb(0,212,255));   
+}
+.How-To-Book h2{
+	background: linear-gradient(to right, rgb(9,9,121) 0%, rgb(0,212,255) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+.b-search{
+    background: linear-gradient(to right, rgb(9,9,121) 0%, rgb(0,212,255) 100%);
+	-webkit-background-clip: border-box;
+	/* -webkit-text-fill-color: transparent; */
+}

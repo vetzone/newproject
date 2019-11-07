@@ -32,12 +32,17 @@ button {
     font-weight: bold;
 }
 
-.card-header {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
+.card {
+    border: 1px solid #0bb5eb;
+    border-radius: 15px;
 
-.card-body {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+  }
+
+  h4 {
+    background: linear-gradient(#0bb5eb,#7c7ee2 );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+
+  }
+

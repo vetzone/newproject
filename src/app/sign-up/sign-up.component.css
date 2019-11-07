@@ -5,9 +5,10 @@
    }
 
    h4 {
-     background: linear-gradient(#7c7ee2, #0bb5eb);
+     background: linear-gradient(#0bb5eb,#7c7ee2 );
      background-clip: text;
      -webkit-text-fill-color: transparent;
+     padding-bottom: 5px;
 
    }
 

@@ -1,34 +1,36 @@
 <div class="container">
-    <div class="card  text-center col-lg-7 border border-white">
-        <h5 class="card-header  bg-primary  text-white font"> Manage your Profile </h5>
-        <div class="card-body border border-info">
-
+    <div class=" card p-4 text-center mt-5  col-md-6 col-sm-8  offset-md-3 offset-sm-2  ">
+            <div class=" text-center my-3">
+                    <h4 class=text> Manage Your Profile</h4>
+                   </div>
+       
+ 
             <form #myform='ngForm' (ngSubmit)='onSubmit(myform)'>
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-lg-3 col-form-label text-secondary">Your name<span>*</span></label>
+                    <label for="inputname3" class="col-lg-3 col-form-label text-secondary">Your name<span>*</span></label>
                     <div class="col-lg-9">
-                        <input type="name" class="form-control" id="inputname3" placeholder="Name" #username='ngModel' [(ngModel)]='variable' required>
+                        <input type="name" name="name" class="form-control" id="inputname3" placeholder="Name" #username='ngModel' [(ngModel)]='userinfo.username' required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="inputEmail" class="col-lg-3 col-form-label text-secondary ">Email address<span>*</span></label>
                     <div class="col-lg-9">
-                        <input type="email" class="form-control " id="inputEmail" placeholder="Email" required #email='ngModel' [(ngModel)]='variable2'>
+                        <input type="email" name="email" class="form-control " id="inputEmail" placeholder="Email" required #email='ngModel' [(ngModel)]='userinfo.username'>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail2" class="col-lg-3 col-form-label text-secondary">Phone number<span>*</span></label>
+                    <label for="inputphone" class="col-lg-3 col-form-label text-secondary">Phone number<span>*</span></label>
                     <div class="col-lg-9">
-                        <input type="tel" class="form-control " id="inputEmail2" placeholder="phone number" required #number='ngModel' [(ngModel)]='variable3'>
+                        <input type="tel" name="phone" class="form-control " id="inputphone" placeholder="phone number" required #number='ngModel' [(ngModel)]='userinfo.phone'>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-lg-3 col-form-label text-secondary">Birth of date</label>
+                    <label for="inputEmail3" class="col-lg-3 col-form-label text-secondary">Birth of date </label>
                     <div class="col-lg-9">
-                        <input type="date" class="form-control" id="inputEmail3" placeholder="birth date" #date='ngModel' [(ngModel)]='variable4'>
+                        <input type="date" class="form-control" id="inputEmail3" placeholder="birth date" #date='ngModel' [(ngModel)]='userinfo.birth'>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -70,5 +72,6 @@
                 </div>
             </form>
 
-        </div>
+     
     </div>
+</div>

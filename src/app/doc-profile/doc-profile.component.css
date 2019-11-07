@@ -1,0 +1,62 @@
+.card {
+    border: 1px solid #0bb5eb;
+    border-radius: 15px;
+
+  }
+  .crad2 img{
+      width: 30%;
+  }
+  .btn1 {
+    background: linear-gradient(#7c7ee2, #0bb5eb);
+    border-radius: 10px;
+
+  }
+  h3,h4,i,h5{
+   
+        background: linear-gradient(#0bb5eb,#7c7ee2 );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 5px;
+   
+      
+  }
+  *{
+    box-sizing: border-box;
+}
+#vetprofile{
+    border-radius: 50%;
+}
+
+.vetinfo{
+    border: 3px solid red;
+    border-radius: 50px 50px;
+    height: 400px;
+}
+.img-responsive {
+    margin: 0 auto;
+}
+
+.checked {
+    color: orange;
+  }
+
+  /* my work */
+#bookingcard{
+    border-radius: 35px 35px;
+    border: blueviolet 1px solid;
+    height: auto;
+    padding: 40px;
+}
+
+#appointmentcard{
+    border-radius: 35px 35px;
+    border: gray 1px solid;
+}
+
+#appoinmentcard > .card-body > .form-group > #book{
+    border-radius: 50px
+}
+
+.form-row{
+    margin: 0 auto;
+}

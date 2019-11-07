@@ -17,6 +17,7 @@ import { SignUpComponent } from './sign-up/SignUpComponent';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeadComponent } from './core/head/head.component';
 import { HomeComponent } from './core/home/home.component';
+import { DocProfileComponent } from './doc-profile/doc-profile.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { HomeComponent } from './core/home/home.component';
     NavbarComponent,
     FooterComponent,
     HeadComponent,
-    HomeComponent
+    HomeComponent,
+    DocProfileComponent
   ],
   imports: [
     BrowserModule,

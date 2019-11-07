@@ -11,5 +11,10 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
   }
+  onSubmit(myform){
+
+  }
+  userinfo = { username: '',email:'',phone:'', birth: '' }
+
 
 }

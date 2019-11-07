@@ -1,47 +1,53 @@
-<p class="text-danger" *ngIf="isvalid || password.invalid || password.touched || username.invalid || username.touched || username.errors['required']">Invalid User Name or Password</p>
-<div class="card">
-  <div class="container">
-    <h4 class="card-title">Log In</h4>
-    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
-      <div class="form-group row">
-        <label for="username" class="col-sm-1-12 col-form-label">User Name </label>
-        <div class="col-sm-1-12">
-          <input type="text" class="form-control" name="username" id="username" placeholder="User Name"
-           #username="ngModel" [(ngModel)]="userinfo.username" required minlength="5">
+<div class="container">
+  <div class="card border border-primary col-xl-5 col-lg-5 col-md-6 col-sm-7 col-xs-8 col-8">
+      <div class="card-body">
+        <h5 class="card-title text-primary">LOGIN</h5>
+        <div class="form-group col-*-6">
+          <input type="text" class="form-control border border-primary"
+                   id="username" placeholder="User Name">
+        </div>
+      <div class="form-group col-*-6">
+        <input type="password" class="form-control border border-primary"
+                 id="password" placeholder="Password">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-*-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Remember me
+            </label>
+            <a [routerLink]="['/']"
+               class="d-*-flex text-decoration-none pl-4">
+                  Forget your password?
+            </a>
+          </div>
         </div>
       </div>
-      <div class="form-group row">
-        <label for="password" class="col-sm-1-12 col-form-label">Password </label>
-        <div class="col-sm-1-12">
-          <input type="password" class="form-control" name="password" id="password" placeholder="Password"
-           #password="ngModel" [(ngModel)]="userinfo.password" required>
+      <div class="form-group">
+          <div class="form-group col-*-6">
+            <button class='btn btn-primary col-*-8 w-100 h-100 p-2' type="submit" id='signin'>Sign in</button>
           </div>
       </div>
-      <div class="form-group row">
-        <div class="col-sm-1-12">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember Me</label>
-            </div>
-        </div>
-      </div>
-      <div class="form-group row">
-          <div class="col-sm-1-12">
-            <p class='signpara'>If you don't have an account , click <a class='signlink'[routerLink]="['/csignup']">Sign Up</a></p>
+      <div class="form-group">
+          <div class="form-group col-*-1">
+            <p class='text-center'>OR</p>
           </div>
       </div>
-      <div class="form-group row">
-          <div class="text-center">
-              <button class="btn btn-lg btn-facebook text-center mb-3 ">
-                  <i class="fa fa-facebook"></i><span>  </span>  Connect with Facebook
-              </button>
-          </div>
+      <div class="form-group col-*-6">
+          <button class='col-*-8 w-100 h-100 p-2 text-center' id='facebook'>
+               <i class="fa fa-facebook mr-3"></i>
+               Login with Facebook
+          </button>
       </div>
-      <div class="form-group row">
-        <div class="offset-sm-2 col-sm-10">
-          <button type="submit" class="btn" [disabled]="myform.invalid">Sign In</button>
-        </div>
+      <div class="col-*-4">
+        <label for="gridCheck" class="form-check-label text-center offset-3 pb-1">
+          Don't have an account
+        </label>
+        <a [routerLink]="['/csignup']" class="text-decoration-none text-center text-primary offset-4 pb-5">
+          Sign Up Now
+        </a>
       </div>
-    </form>
+    </div>
   </div>
 </div>

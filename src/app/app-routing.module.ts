@@ -1,3 +1,5 @@
+import { DocProfileComponent } from './doc-profile/doc-profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { InfoComponent } from './core/info/info.component';
 import { SignUpComponent } from './sign-up/SignUpComponent';
 import { CloginComponent } from './clogin/clogin.component';
@@ -17,7 +19,10 @@ const routes: Routes = [
     {path:'contactus',component:ContactusComponent},
   {path:'ourteam',component:OurteamComponent},
   {path:'callus',component:CallusComponent},
-  ]}
+ 
+  ]},
+  {path:'profile',component:ProfileComponent},
+  {path:'docprofile',component:DocProfileComponent},
 ];
 
 @NgModule({
